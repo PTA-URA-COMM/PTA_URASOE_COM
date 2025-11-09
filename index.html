@@ -253,13 +253,13 @@
     line-height: 1.8;
     text-align: left; /* ← これでリスト全体を左寄せに */
   }
-</style>
 
-/* 🌟 スマホ対応調整 */
 /* 🌟 スマホ表示でも横並びを維持して崩れないようにする */
 @media (max-width: 600px) {
   header {
-    padding: 10px; /* ヘッダの余白を小さく */
+    font-size: 16px;          /* タイトル文字を小さく */
+    white-space: nowrap;      /* 改行させない */
+    overflow: hidden;         /* はみ出したら隠す */
   }
 
   .title {
@@ -291,6 +291,9 @@
     padding: 6px 10px;
   }
 }
+
+</style>
+
 
 
 </body>
